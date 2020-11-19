@@ -56,31 +56,38 @@ a:hover{
 
 #home{
     background-color: #395C6B;
+    height: 55vh;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    overflow: scroll;
 }
-.homeMain{
-    width: 100%;
+.homeSection{
+    border: 1px solid aliceblue;
+}
+.homeSection:nth-child(1){
+    width: 70%;
     height: 100%;
+}
+.homeSection:nth-child(2){
+    width: 30%;
+    height: 50%;
+}
+.homeSection:nth-child(3){
+     width: 30%;
+     height: 25%;
+}
+.homeSection:nth-child(4){
+      width: 30%;
+      height: 25%;
+}
+.gearArea{
+    width: 100vw;
+    height: 20vh;
     background-color: #395C6B;
-    border: 2px solid white;
 }
-.smallAreaHome{
-    width: 100%;
+.gear{
+    width: calc(100%/6.2);
     height: 100%;
-}
-.middle{
-    width: 100%;
-    height: 100%;
-    background-color: #395C6B;
-    border: 2px solid white;
-}
-.homeSmall{
-    width: 100%;
-    height: 100%;
-    background-color: #395C6B;
-    border: 2px solid white;
 }
 
 
@@ -115,25 +122,6 @@ button{
     .imageAreaTop{
         width: 50vw;
         height: 30vh;
-    }
-    .homeMain{
-        width: 60%;
-        height: 80%;
-    }
-    .smallAreaHome{
-        width: 40%;
-        height: 80%;
-    }
-    .middle{
-        width: 100%;
-        height: calc(100%/2);
-    }
-    .homeSmall{
-        width: 100%;
-        height: calc(100%/4);
-    }
-    #home{
-        flex-direction: row;
     }
 }
 @media screen and (min-width: 1000px){
