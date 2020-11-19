@@ -3,10 +3,13 @@ $(document).ready(function (){
        $(".heading").css("display", "flex");
    });
 
-   $(".homeGroup").on("click", function (i, e){
-       $(e).forEach((item) => {
-           console.log(item.text());
-       })
-   });
+    $(".homeSection").on("click", function (){
+        let currentText = $(this).text();
+        let nextText = $(this).next().text();
+        let prevText = $(this).prev().text();
+        console.log("current text is: " + currentText);
+        console.log("next text is: " + nextText);
+        console.log("prev text is: " + prevText);
+    });
 
 });
