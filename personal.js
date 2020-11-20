@@ -53,7 +53,7 @@ $(document).ready(function (){
     cvs.width = window.innerWidth;
     cvs.height = window.innerHeight;
     let particleArr = [];
-    let numOfParticles = 100;
+    let numOfParticles = 30;
 
 
     const mouse = {
@@ -99,22 +99,13 @@ $(document).ready(function (){
             }
         }
     }
-    function randomColor(){
-        let output = "#";
-        let chars = ["a", "b", "c", "d", "e", "f", 1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-        for(let i = 0; i < 6; i++){
-            let ran = Math.floor(Math.random()*15)+1;
-            output+=chars[ran];
-        }
-        return output;
-    }
     function init(){
         particleArr = [];
         for(let i = 0; i < numOfParticles; i++){
             let x = mouse.x;
             let y = mouse.y;
             let size = (Math.random() * 5) + 2;
-            let c = randomColor();
+            let c = "#E5E7E6";
             let weight = 1;
             particleArr.push(new Particle(x, y, size, c, weight));
         }

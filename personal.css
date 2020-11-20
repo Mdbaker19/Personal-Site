@@ -139,6 +139,7 @@ p{
     background-color: #6B2B06;
     flex-direction: column;
     overflow: scroll;
+    overflow-x: hidden;
 }
 .projectHeader{
     width: 100%;
