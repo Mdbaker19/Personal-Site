@@ -21,6 +21,9 @@ body{
     flex-direction: column;
     align-items: center;
 }
+#hello{
+    text-align: center;
+}
 .imageAreaTop{
     width: 240px;
     height: 240px;
@@ -70,7 +73,6 @@ p{
 }
 
 
-
 #home{
     background-color: #395C6B;
     height: 58vh;
@@ -83,34 +85,43 @@ p{
     display: flex;
     justify-content: center;
 }
-.homeSection:nth-child(1){
-    width: 70%;
-    height: 100%;
-}
 .homeSection:nth-child(2){
+    width: 65%;
+    height: 100%;
+    margin-right: 5%;
+}
+.homeSection:nth-child(3){
     width: 30%;
     height: 50%;
 }
-.homeSection:nth-child(3){
+.homeSection:nth-child(4){
      width: 30%;
      height: 25%;
 }
-.homeSection:nth-child(4){
+.homeSection:nth-child(5){
       width: 30%;
       height: 25%;
 }
+#cycleThru{
+    width: 100%;
+}
 .gearArea{
-    width: 100vw;
-    height: 6vh;
+    /*width: 100vw;*/
+    /*height: 6vh;*/
+    width: 5vw;
+    height: 54%;
+    left: 65vw;
+    position: absolute;
     background-color: #395C6B;
 }
 .gear{
-    width: calc(100%/10);
+    /*width: calc(100%/10);*/
     height: auto;
+    width: 100%;
 }
-.gear:first-child{
-    margin-left: 1em;
-}
+/*.gear:first-child{*/
+/*    margin-left: 1em;*/
+/*}*/
 @keyframes rotation {
     from{
         transform: rotate(0deg);
@@ -218,26 +229,24 @@ button{
     color: #141301;
 }
 @media screen and (min-width: 500px) {
-    .gearArea {
-        height: 9vh;
-    }
-    .gear:first-child{
-        margin-left: 2em;
-    }
+    /*.gearArea {*/
+    /*    height: 9vh;*/
+    /*}*/
+    /*.gear:first-child{*/
+    /*    margin-left: 2em;*/
+    /*}*/
 }
 @media screen and (min-width: 740px){
     .imageAreaTop{
         width: 380px;
         height: 350px;
     }
-    .gearArea{
-        width: 100vw;
-        height: 10vh;
-        background-color: #395C6B;
-    }
-    .gear {
-        width: calc(100% / 9);
-    }
+    /*.gearArea{*/
+    /*    height: 10vh;*/
+    /*}*/
+    /*.gear {*/
+    /*    width: calc(100% / 9);*/
+    /*}*/
     .projectItem{
         width: 90%;
         height: 50%;
@@ -253,9 +262,9 @@ button{
     }
 }
 @media screen and (min-width: 840px) {
-    .gearArea {
-        height: 12vh;
-    }
+    /*.gearArea {*/
+    /*    height: 12vh;*/
+    /*}*/
     .imagePlaceHolder{
         height: 100%;
     }
@@ -265,36 +274,32 @@ button{
         width: 550px;
         height: 550px;
     }
-    .gearArea{
-        width: 100vw;
-        height: 15.5vh;
-        background-color: #395C6B;
-    }
-    .gear{
-        width: calc(100%/8.9);
-    }
+    /*.gearArea{*/
+    /*    height: 15.5vh;*/
+    /*}*/
+    /*.gear{*/
+    /*    width: calc(100%/8.9);*/
+    /*}*/
 }
 @media screen and (min-width: 1200px){
-    .gearArea{
-        height: 17.5vh;
-    }
+    /*.gearArea{*/
+    /*    height: 17.5vh;*/
+    /*}*/
 }
 @media screen and (min-width: 1400px){
     .imageAreaTop{
         width: 40vw;
         height: 60vh;
     }
-    .gearArea{
-        width: 100vw;
-        height: 20vh;
-        background-color: #395C6B;
-    }
-    .gear{
-        width: calc(100%/8.7);
-    }
+    /*.gearArea{*/
+    /*    height: 20vh;*/
+    /*}*/
+    /*.gear{*/
+    /*    width: calc(100%/8.7);*/
+    /*}*/
 }
 @media screen and (min-width: 1580px){
-    .gearArea{
-        height: 25vh;
-    }
+    /*.gearArea{*/
+    /*    height: 25vh;*/
+    /*}*/
 }

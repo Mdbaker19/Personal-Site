@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="personal.css">
 </head>
 <body>
-<canvas id="siteCanvas"></canvas>
-<div class="welcome">
-    <div class="imageAreaTop">
-        <img src="img/self.jpg" id="self" alt="self">
+<div id="toHideOnClick">
+    <canvas id="siteCanvas"></canvas>
+    <div class="welcome">
+        <div class="imageAreaTop">
+            <img src="img/self.jpg" id="self" alt="self">
+        </div>
+        <h1 id="hello">Hello, my name is <span class="name">Matthew Baker</span> and I am a full stack web developer</h1>
+        <a href="#home" id="initial"><button>Take a look</button></a>
     </div>
-    <h1>Hello, my name is <span class="name">Matthew Baker</span> and I am a full stack web developer</h1>
-    <a href="#home" id="initial"><button>Take a look</button></a>
 </div>
 
 
@@ -36,32 +38,34 @@
 
 
 <div class="section homeGroup" id="home">
-    <div class="homeSection">
+<div class="gearArea">
+    <button id="cycleThru">=></button>
+    <img src="img/gear.png" alt="gear" class="gear firstGear">
+    <img src="img/gear.png" alt="gear" class="gear secondGear">
+    <img src="img/gear.png" alt="gear" class="gear firstGear">
+    <img src="img/gear.png" alt="gear" class="gear secondGear">
+    <img src="img/gear.png" alt="gear" class="gear firstGear">
+    <img src="img/gear.png" alt="gear" class="gear secondGear">
+    <img src="img/gear.png" alt="gear" class="gear firstGear">
+    <img src="img/gear.png" alt="gear" class="gear secondGear">
+</div>
+    <div class="homeSection" id="firstLargeArea">
         <p>MAIN SECTION
-            DISPLAY CURRENTLY CLICKED CONTENT ------ GEARS TO ROTATE AFTER A CLICK EVENT MAYBE???</p>
+            DISPLAY CURRENTLY CLICKED CONTENT ------ GEARS TO ROTATE AFTER A CLICK EVENT MAYBE???
+        HAVE AN ARROW IN A FIXED SPOT IN THE TOP RIGHT WITH THE GOLDEN RATIO LAYOUT AND SHIFT IT LIKE THAT ONE SITE USING THE GEARS</p>
     </div>
-    <div class="homeSection">
+    <div class="homeSection" id="middleSizeArea">
         <p>MIDDLE SECTION
             CLICK THIS AND THE TEXT WOULD GO TO MAIN, SMALL 1 HERE, SMALL 2 TO SMALL 1 AND MAIN TO SMALL 2</p>
     </div>
-    <div class="homeSection smallerHomeSections">
+    <div class="homeSection" id="smallArea1">
         <p>SMALL 1
             CLICK THIS AND TEXT GO TO MAIN, MAIN TO SMALL 2, MIDDLE STAYS, SMALL 2 HERE</p>
     </div>
-    <div class="homeSection smallerHomeSections">
+    <div class="homeSection" id="smallArea2">
         <p>SMALL 2
             CLICK THIS AND TEXT TO MAIN, MAIN HERE, SMALL 1 STAYS MIDDLE STAYS</p>
     </div>
-</div>
-<div class="gearArea">
-    <img src="img/gear.png" alt="gear" class="gear firstGear">
-    <img src="img/gear.png" alt="gear" class="gear secondGear">
-    <img src="img/gear.png" alt="gear" class="gear firstGear">
-    <img src="img/gear.png" alt="gear" class="gear secondGear">
-    <img src="img/gear.png" alt="gear" class="gear firstGear">
-    <img src="img/gear.png" alt="gear" class="gear secondGear">
-    <img src="img/gear.png" alt="gear" class="gear firstGear">
-    <img src="img/gear.png" alt="gear" class="gear secondGear">
 </div>
 
 

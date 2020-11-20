@@ -1,23 +1,12 @@
 $(document).ready(function (){
    $("#initial").on("click", function (){
        $(".heading").css("display", "flex");
+       $("#toHideOnClick").css("display", "none");
    });
 
-    $(".homeSection").on("click", function (){
-        let currentText = $(this).text();
-        let nextText = $(this).next().text();
-        let prevText = $(this).prev().text();
-        console.log("current text is: " + currentText);
-        console.log("next text is: " + nextText);
-        console.log("prev text is: " + prevText);
-        $(this).prev().html($(this).first().html());
-        $(this).html(prevText);
-        $(this).next().html(currentText);
-    });
 
-    //4 functions for each shift possibility
 
-    //object of possibilities
+
 
 
 
@@ -53,7 +42,7 @@ $(document).ready(function (){
     cvs.width = window.innerWidth;
     cvs.height = window.innerHeight;
     let particleArr = [];
-    let numOfParticles = 30;
+    let numOfParticles = 10;
 
 
     const mouse = {
