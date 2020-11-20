@@ -7,18 +7,23 @@
 body{
     background-color: black;
 }
+#siteCanvas{
+    width: 100vw;
+    height: 100vh;
+}
 .welcome{
+    position: absolute;
+    top: 0;
     height: 100vh;
     width: 100vw;
-    background-color: #30638E;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 .imageAreaTop{
-    width: 100vw;
-    height: 50vh;
+    width: 240px;
+    height: 240px;
 }
 #self{
     height: 100%;
@@ -35,7 +40,7 @@ body{
     background-color: #141301;
     border: 1px solid #E5E7E6;
     border-top: none;
-    height: 10vh;
+    height: 5vh;
     width: 100vw;
     opacity: .7;
     z-index: 1000;
@@ -44,13 +49,21 @@ a{
     text-decoration: none;
 }
 a:hover{
-   font-size: 18px;
+    font-size: 18px;
     color: #b0b5b2;
+}
+button:hover{
+    cursor: pointer;
 }
 .section{
     height: 75vh;
     width: 100vw;
     display: flex;
+    padding-top: 5vh;
+}
+.name{
+    color: #cbd0ce;
+    text-shadow: 2px 2px #3f6575;
 }
 p{
     font-size: 12px;
@@ -88,14 +101,16 @@ p{
 }
 .gearArea{
     width: 100vw;
-    height: 5vh;
+    height: 6vh;
     background-color: #395C6B;
 }
 .gear{
-    width: calc(100%/9.2);
+    width: calc(100%/10);
     height: auto;
 }
-
+.gear:first-child{
+    margin-left: 1em;
+}
 @keyframes rotation {
     from{
         transform: rotate(0deg);
@@ -158,8 +173,29 @@ p{
 
 #skills{
     background-color: #141301;
+    flex-direction: column;
 }
-
+.skillItem{
+    height: calc(100%/10);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.skillAmount{
+    width: 45%;
+}
+.skillName{
+    width: 50%;
+}
+.codeLanguage{
+    font-size: 20px;
+}
+.bar{
+   background-color: green;
+    color: green;
+}
 
 
 
@@ -180,24 +216,30 @@ p{
 button{
     color: #141301;
 }
-
+@media screen and (min-width: 500px) {
+    .gearArea {
+        height: 9vh;
+    }
+    .gear:first-child{
+        margin-left: 2em;
+    }
+}
 @media screen and (min-width: 740px){
     .imageAreaTop{
-        width: 50vw;
-        height: 30vh;
+        width: 380px;
+        height: 350px;
     }
     .gearArea{
         width: 100vw;
-        height: 10.7vh;
+        height: 10vh;
         background-color: #395C6B;
     }
-    .gear{
-        width: calc(100%/8.4);
-        height: 100%;
+    .gear {
+        width: calc(100% / 9);
     }
     .projectItem{
         width: 90%;
-        height: 40%;
+        height: 50%;
         display: flex;
         margin: 3% auto;
     }
@@ -205,34 +247,53 @@ button{
         justify-content: start;
         margin-left: 5%;
     }
+    .codeLanguage{
+        font-size: 32px;
+    }
+}
+@media screen and (min-width: 840px) {
+    .gearArea {
+        height: 12vh;
+    }
+    .imagePlaceHolder{
+        height: 100%;
+    }
 }
 @media screen and (min-width: 1000px){
     .imageAreaTop{
-        width: 40vw;
-        height: 45vh;
+        width: 550px;
+        height: 550px;
     }
     .gearArea{
         width: 100vw;
-        height: 15vh;
+        height: 15.5vh;
         background-color: #395C6B;
     }
     .gear{
-        width: calc(100%/8.3);
-        height: 100%;
+        width: calc(100%/8.9);
+    }
+}
+@media screen and (min-width: 1200px){
+    .gearArea{
+        height: 17.5vh;
     }
 }
 @media screen and (min-width: 1400px){
     .imageAreaTop{
         width: 40vw;
-        height: 45vh;
+        height: 60vh;
     }
     .gearArea{
         width: 100vw;
-        height: 14vh;
+        height: 20vh;
         background-color: #395C6B;
     }
     .gear{
-        width: calc(100%/8.3);
-        height: 100%;
+        width: calc(100%/8.7);
+    }
+}
+@media screen and (min-width: 1580px){
+    .gearArea{
+        height: 25vh;
     }
 }
