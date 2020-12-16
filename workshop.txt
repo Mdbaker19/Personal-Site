@@ -1,0 +1,36 @@
+Touch points for an employer to get to know you
+    work history
+    portfolio
+    goals
+    education
+    skill
+    LinkedIn account
+    Git hub activity
+    qualifications
+    Certifications
+    Awards
+    Social Media
+    Professional Email address, email Etiquette
+
+Resume => {
+    Intro to your professional self, education, qualifications, experience, typically sent with a job applications
+}
+
+Applicant Tracking System(ATS) => {
+    keyword search system (Bullhorn, workday, breezy)
+}
+Leverage all skill sets to hit key words to prevent being "filtered" out
+Formatting of application or whatever needs to be correct (attention to detail) ask for pdf give .doc => could lead to screen out
+
+how would you write "I changed a light bulb on my resume"? => {
+    single-handed managed the successful upgrade and deployment of new
+    environmental illumination system with zero cost overruns and zero safety incidents
+}
+
+Information hierarchy is important resume concept
+
+You can also email pd@codeup.com or Slack Caitlin, Candra and myself (Marianna)
+
+Utilizing "This Api" and the "Api" this project receives data and renders to display the 3 day forecast for any location entered or by clicking the map
+
+application ran on a json server to rate, add, edit, and delete movies using AJAX requests

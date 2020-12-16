@@ -5,225 +5,46 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>My Website</title>
     <script src="https://kit.fontawesome.com/36f035c426.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="personal.css">
-</head>
 <body>
-<div id="toHideOnClick">
-    <canvas id="siteCanvas"></canvas>
-    <div class="welcome">
-        <div class="imageAreaTop">
-            <img src="img/self.jpg" id="self" alt="self">
-        </div>
-        <h1 id="hello">Hello, my name is <span class="name">Matthew Baker</span> and I am a full stack web developer</h1>
-        <a href="#home" id="initial"><button>Take a look</button></a>
-    </div>
+
+<div id="frontEndMain">
+    <h1 id="introHeader">Hello, my name is <span id="name">Matthew Baker</span> and I am a Full Stack Web Developer</h1>
+    <button id="viewPage">View Page</button>
 </div>
 
-
-
-
-
-<div class="heading">
-    <a href="#home">Home</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-</div>
-
-
-
-
-
-
-<div class="section homeGroup" id="home">
-<div class="gearArea">
-    <button id="cycleThru">=></button>
-    <img src="img/gear.png" alt="gear" class="gear firstGear">
-    <img src="img/gear.png" alt="gear" class="gear secondGear">
-    <img src="img/gear.png" alt="gear" class="gear firstGear">
-    <img src="img/gear.png" alt="gear" class="gear secondGear">
-    <img src="img/gear.png" alt="gear" class="gear firstGear">
-    <img src="img/gear.png" alt="gear" class="gear secondGear">
-    <img src="img/gear.png" alt="gear" class="gear firstGear">
-    <img src="img/gear.png" alt="gear" class="gear secondGear">
-</div>
-    <div class="homeSection" id="firstLargeArea">
-        <p>MAIN SECTION
-            DISPLAY CURRENTLY CLICKED CONTENT ------ GEARS TO ROTATE AFTER A CLICK EVENT MAYBE???
-        HAVE AN ARROW IN A FIXED SPOT IN THE TOP RIGHT WITH THE GOLDEN RATIO LAYOUT AND SHIFT IT LIKE THAT ONE SITE USING THE GEARS</p>
-    </div>
-    <div class="homeSection" id="middleSizeArea">
-        <p>MIDDLE SECTION
-            CLICK THIS AND THE TEXT WOULD GO TO MAIN, SMALL 1 HERE, SMALL 2 TO SMALL 1 AND MAIN TO SMALL 2</p>
-    </div>
-    <div class="homeSection" id="smallArea1">
-        <p>SMALL 1
-            CLICK THIS AND TEXT GO TO MAIN, MAIN TO SMALL 2, MIDDLE STAYS, SMALL 2 HERE</p>
-    </div>
-    <div class="homeSection" id="smallArea2">
-        <p>SMALL 2
-            CLICK THIS AND TEXT TO MAIN, MAIN HERE, SMALL 1 STAYS MIDDLE STAYS</p>
-    </div>
-</div>
-
-
-
-
-
-<div class="section" id="projects">
-    <div class="projectHeader">
-        <h1>Projects Here</h1>
-        <p>Here is a list of my personal and class projects</p>
-    </div>
-    <div class="projectGroup">
-        <div class="projectItem">
-            <div class="imagePlaceHolder">
-
-            </div>
-            <div class="projectDescription">
-                <h2>MasterMind</h2>
-                <p>Project description here............. project project project project is this about this and this made from this</p>
-            </div>
+<div id="websiteBody">
+    <div id="me">
+        <div id="myselfImage">
+            <img id="personal" src="img/self.jpg" alt="personalHeadshot">
         </div>
-        <div class="projectItem">
-            <div class="imagePlaceHolder">
-
+    </div>
+    <div id="otherPart">
+        <div class="projects">
+            <div class="projectItem" id="firstProject">
+                <p class="projectImageDescription">Description Here On Hover</p>
             </div>
-            <div class="projectDescription">
-                <h2>Weather Map</h2>
-                <p>Project description here............. project project project project is this about this and this made from this</p>
+            <div class="projectItem">
+                Project Item
             </div>
-        </div>
-        <div class="projectItem">
-            <div class="imagePlaceHolder">
-
+            <div class="projectItem">
+                Project Item
             </div>
-            <div class="projectDescription">
-                <h2>Coffee Project</h2>
-                <p>Project description here............. project project project project is this about this and this made from this</p>
+            <div class="projectItem">
+                Project Item
             </div>
-        </div>
-        <div class="projectItem">
-            <div class="imagePlaceHolder">
-
+            <div class="projectItem">
+                Project Item
             </div>
-            <div class="projectDescription">
-                <h2>Small Projects Collection</h2>
-                <p>Project description here............. project project project project is this about this and this made from this</p>
-            </div>
-        </div>
-        <div class="projectItem">
-            <div class="imagePlaceHolder">
-
-            </div>
-            <div class="projectDescription">
-                <h2>Some Other Class Project Later on</h2>
-                <p>Project description here............. project project project project is this about this and this made from this</p>
+            <div class="projectItem">
+                Project Item
             </div>
         </div>
     </div>
 </div>
 
-
-
-
-
-<div class="section" id="skills">
-    <div class="skillItem">
-        <div class="skillName">
-            <h1 class="codeLanguage">JAVASCRIPT</h1>
-        </div>
-        <div class="skillAmount">
-            <p class="bar">--------</p>
-        </div>
-    </div>
-    <div class="skillItem">
-        <div class="skillName">
-            <h1 class="codeLanguage">HTML</h1>
-        </div>
-        <div class="skillAmount">
-            <p class="bar">--------</p>
-        </div>
-    </div>
-    <div class="skillItem">
-        <div class="skillName">
-            <h1 class="codeLanguage">CSS</h1>
-        </div>
-        <div class="skillAmount">
-            <p class="bar">--------</p>
-        </div>
-    </div>
-    <div class="skillItem">
-        <div class="skillName">
-            <h1 class="codeLanguage">JQUERY</h1>
-        </div>
-        <div class="skillAmount">
-            <p class="bar">--------</p>
-        </div>
-    </div>
-    <div class="skillItem">
-        <div class="skillName">
-            <h1 class="codeLanguage">BOOTSTRAP</h1>
-        </div>
-        <div class="skillAmount">
-            <p class="bar">--------</p>
-        </div>
-    </div>
-    <div class="skillItem">
-        <div class="skillName">
-            <h1 class="codeLanguage">PAIR PROGRAMMING</h1>
-        </div>
-        <div class="skillAmount">
-            <p class="bar">--------</p>
-        </div>
-    </div>
-    <div class="skillItem">
-        <div class="skillName">
-            <h1 class="codeLanguage">JAVA</h1>
-        </div>
-        <div class="skillAmount">
-            <p class="bar">--------</p>
-        </div>
-    </div>
-    <div class="skillItem">
-        <div class="skillName">
-            <h1 class="codeLanguage">VERSION CONTROL</h1>
-        </div>
-        <div class="skillAmount">
-            <p class="bar">--------</p>
-        </div>
-    </div>
-    <div class="skillItem">
-        <div class="skillName">
-            <h1 class="codeLanguage">MYSQL</h1>
-        </div>
-        <div class="skillAmount">
-            <p class="bar">--------</p>
-        </div>
-    </div>
-    <div class="skillItem">
-        <div class="skillName">
-            <h1 class="codeLanguage">SPRING</h1>
-        </div>
-        <div class="skillAmount">
-            <p class="bar">--------</p>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-<div class="section" id="contact">
-    <div class="iconArea">
-        <a href="https://github.com/Mdbaker19"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/matthew-baker-76b17b200/"><i class="fab fa-linkedin-in"></i></a>
-    </div>
-</div>
 
 
 <script src="codeReference/jQuery.js"></script>

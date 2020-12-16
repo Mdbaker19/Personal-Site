@@ -2,304 +2,74 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #E5E7E6;
 }
 body{
+    font-size: 16px;
     background-color: black;
-}
-#siteCanvas{
-    width: 100vw;
-    height: 100vh;
-}
-.welcome{
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-#hello{
-    text-align: center;
-}
-.imageAreaTop{
-    width: 240px;
-    height: 240px;
-}
-#self{
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-}
-.heading{
-    display: none;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    background-color: #141301;
-    border: 1px solid #E5E7E6;
-    border-top: none;
-    height: 5vh;
-    width: 100vw;
-    opacity: .7;
-    z-index: 1000;
-}
-a{
-    text-decoration: none;
-}
-a:hover{
-    font-size: 18px;
-    color: #b0b5b2;
 }
 button:hover{
     cursor: pointer;
 }
-.section{
-    height: 75vh;
+#frontEndMain{
+    background-color: #303036;
     width: 100vw;
+    height: 100vh;
     display: flex;
-    padding-top: 5vh;
-}
-.name{
-    color: #cbd0ce;
-    text-shadow: 2px 2px #3f6575;
-}
-p{
-    font-size: 12px;
-}
-
-
-#home{
-    background-color: #395C6B;
-    height: 58vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-.homeSection{
-    border: 1px solid aliceblue;
-    display: flex;
+    align-items: center;
     justify-content: center;
-}
-.homeSection:nth-child(2){
-    width: 65%;
-    height: 100%;
-    margin-right: 5%;
-}
-.homeSection:nth-child(3){
-    width: 30%;
-    height: 50%;
-}
-.homeSection:nth-child(4){
-     width: 30%;
-     height: 25%;
-}
-.homeSection:nth-child(5){
-      width: 30%;
-      height: 25%;
-}
-#cycleThru{
-    width: 100%;
-}
-.gearArea{
-    /*width: 100vw;*/
-    /*height: 6vh;*/
-    width: 5vw;
-    height: 54%;
-    left: 65vw;
-    position: absolute;
-    background-color: #395C6B;
-}
-.gear{
-    /*width: calc(100%/10);*/
-    height: auto;
-    width: 100%;
-}
-/*.gear:first-child{*/
-/*    margin-left: 1em;*/
-/*}*/
-@keyframes rotation {
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(359deg);
-    }
-}
-.firstGear{
-    animation: rotation 4s infinite linear;
-}
-@keyframes counterRotation {
-    from{
-        transform: rotate(359deg);
-    }
-    to{
-        transform: rotate(0deg);
-    }
-}
-.secondGear{
-    animation: counterRotation 4s infinite linear;
-}
-
-
-#projects{
-    background-color: #6B2B06;
     flex-direction: column;
-    overflow: scroll;
-    overflow-x: hidden;
 }
-.projectHeader{
+#viewPage{
+    display: none;
+    width: 8rem;
+    height: 3rem;
+    background-color: #212121;
+    color: aliceblue;
+}
+#introHeader{
+    display: none;
+    font-size: 1.35rem;
+    margin: 1rem;
+}
+#websiteBody{
+    background-color: #212121;
+    height: 100vh;
+    width: 100vw;
+}
+#me{
+    display: none;
     width: 100%;
     height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5%;
+}
+#personal{
+    width: 80%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5000px;
+    margin: 5% 10%;
+}
+#otherPart{
+    width: 100%;
+    height: 100vh;
+}
+.projects{
+    width: 90%;
+    height: 50vh;
+    margin: 5%;
+    overflow: scroll;
 }
 .projectItem{
     width: 100%;
-    height: 33%;
-    display: flex;
+    height: 45%;
+    text-align: center;
+    background-color: cadetblue;
+    margin: 5% 0;
 }
-.imagePlaceHolder{
-    width: calc(100% * (1/3));
-    height: 65%;
-    background-color: aliceblue;
+#firstProject{
+    background-image: url("img/mastermind.png");
+    background-size: cover;
 }
-.projectDescription{
-    width: calc(100% * (2/3));
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-}
-
-
-
-
-#skills{
-    background-color: #141301;
-    flex-direction: column;
-}
-.skillItem{
-    height: calc(100%/10);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-}
-.skillAmount{
-    width: 45%;
-}
-.skillName{
-    width: 50%;
-}
-.codeLanguage{
-    font-size: 20px;
-}
-.bar{
-   background-color: green;
-    color: green;
-}
-
-
-
-#contact{
-    background-color: #B80C09;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.fab{
-    font-size: 36px;
-}
-
-
-
-
-button{
-    color: #141301;
-}
-@media screen and (min-width: 500px) {
-    /*.gearArea {*/
-    /*    height: 9vh;*/
-    /*}*/
-    /*.gear:first-child{*/
-    /*    margin-left: 2em;*/
-    /*}*/
-}
-@media screen and (min-width: 740px){
-    .imageAreaTop{
-        width: 380px;
-        height: 350px;
-    }
-    /*.gearArea{*/
-    /*    height: 10vh;*/
-    /*}*/
-    /*.gear {*/
-    /*    width: calc(100% / 9);*/
-    /*}*/
-    .projectItem{
-        width: 90%;
-        height: 50%;
-        display: flex;
-        margin: 3% auto;
-    }
-    .projectDescription{
-        justify-content: start;
-        margin-left: 5%;
-    }
-    .codeLanguage{
-        font-size: 32px;
-    }
-}
-@media screen and (min-width: 840px) {
-    /*.gearArea {*/
-    /*    height: 12vh;*/
-    /*}*/
-    .imagePlaceHolder{
-        height: 100%;
-    }
-}
-@media screen and (min-width: 1000px){
-    .imageAreaTop{
-        width: 550px;
-        height: 550px;
-    }
-    /*.gearArea{*/
-    /*    height: 15.5vh;*/
-    /*}*/
-    /*.gear{*/
-    /*    width: calc(100%/8.9);*/
-    /*}*/
-}
-@media screen and (min-width: 1200px){
-    /*.gearArea{*/
-    /*    height: 17.5vh;*/
-    /*}*/
-}
-@media screen and (min-width: 1400px){
-    .imageAreaTop{
-        width: 40vw;
-        height: 60vh;
-    }
-    /*.gearArea{*/
-    /*    height: 20vh;*/
-    /*}*/
-    /*.gear{*/
-    /*    width: calc(100%/8.7);*/
-    /*}*/
-}
-@media screen and (min-width: 1580px){
-    /*.gearArea{*/
-    /*    height: 25vh;*/
-    /*}*/
+.projectImageDescription{
+    color: aliceblue;
+    /*display: none;*/
 }
